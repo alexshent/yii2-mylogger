@@ -17,6 +17,11 @@ $config = [
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
+        'myLogger' => [
+            'class' => 'app\components\myLogger\MyLogger',
+            'type' => 'email',
+            'email' => 'hello@example.com',
+        ],
         'log' => [
             'targets' => [
                 [
